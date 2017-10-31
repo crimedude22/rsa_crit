@@ -8,7 +8,9 @@ bibliography: [cites.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: crimedude22/rsa-crit
-url: 'https://github.com/crimedude22/rsa_crit/'
+url: 'https://crimedude22.github.io/rsa_crit/'
 ---
 
 # rsa crit
+
+test
