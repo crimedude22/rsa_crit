@@ -1,4 +1,5 @@
 book_filename: "rsa-crit"
 repo: https://github.com/crimedude22/rsa_crit
 clean: [cites.bbl]
+output_dir: docs
 new_session: yes
