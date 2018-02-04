@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>rsa crit</title>
+  <meta name="description" content="rsa crit">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="rsa crit" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="<a href="https://crimedude22.github.io/rsa_crit/" class="uri">https://crimedude22.github.io/rsa_crit/</a>" />
+  
+  
+  <meta name="github-repo" content="crimedude22/rsa-crit" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="rsa crit" />
+  
+  
+  
+
+<meta name="author" content="Jonny Saunders">
+
+
+<meta name="date" content="2017-10-30">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="argument.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> rsa crit</a></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#representational-similarity-analysis---qualitatively"><i class="fa fa-check"></i><b>2.1</b> Representational Similarity Analysis - Qualitatively</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#representational-similarity-analysis---mathematically"><i class="fa fa-check"></i><b>2.2</b> Representational Similarity Analysis - Mathematically</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#criticism---theoretical"><i class="fa fa-check"></i><b>2.3</b> Criticism - Theoretical</a></li>
+<li class="chapter" data-level="2.4" data-path="introduction.html"><a href="introduction.html#criticism---practical"><i class="fa fa-check"></i><b>2.4</b> Criticism - Practical</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="argument.html"><a href="argument.html"><i class="fa fa-check"></i><b>3</b> argument</a><ul>
+<li class="chapter" data-level="3.1" data-path="argument.html"><a href="argument.html#httpciteseerx.ist.psu.eduviewdocdownloaddoi10.1.1.136.5427reprep1typepdf"><i class="fa fa-check"></i><b>3.1</b> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.136.5427&amp;rep=rep1&amp;type=pdf" class="uri">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.136.5427&amp;rep=rep1&amp;type=pdf</a></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="simulations-to-run.html"><a href="simulations-to-run.html"><i class="fa fa-check"></i><b>4</b> Simulations to run</a></li>
+<li class="chapter" data-level="5" data-path="scrap.html"><a href="scrap.html"><i class="fa fa-check"></i><b>5</b> scrap</a></li>
+<li class="chapter" data-level="6" data-path="other-resources.html"><a href="other-resources.html"><i class="fa fa-check"></i><b>6</b> Other resources</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">rsa crit</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">2</span> Introduction</h1>
+<p>As neuroscience overcomes the technical barriers to observing neural activity at quantity and speed are being rapidly overcome, the problem of understanding those observations <soon> follows. An increasing complexity of neural data drives ever more ambitious interpretations, and the space between the data and its interpretation are necessarily filled with equally obscure methods of analysis and the philosophy that justifies them.</p>
+<p><we also jump into analysis techniques too quickly without thorough evaluation due to the pressure and pace of publication></p>
+<p>Representational Similarity Analysis (RSA), in its attempt to “connect the branches of systems neuroscience,<cite>” <is in need of some checkin of its homework> <the attempt shouldn't be to "abstract from particular emprical modalities," but we aware of the way that those modalities depart from the computational substance of the brain.> <statement of which RSA we are talking about, which papers were are using to build the decription and which have used it></p>
+<div id="representational-similarity-analysis---qualitatively" class="section level2">
+<h2><span class="header-section-number">2.1</span> Representational Similarity Analysis - Qualitatively</h2>
+<p>The premise of RSA is that the structure of neural representation can be estimated by the “second-order isomorphism” between sensory input and its representation <span class="citation">(Kriegeskorte, Mur, and Bandettini <a href="#ref-Kriegeskorte2008">2008</a> <span class="citation">Shepard and Chipman (<a href="#ref-Shepard1970">1970</a>)</span>)</span>. Rather than attempting to estimate neural representation as a function of sensory input directly, RSA first compares the neural representations evoked by an array of stimuli and the properties of those stimuli within themselves and then compares those comparisons <give graphic here>. The purported advantage of this approach is that it provides a universal abstraction of the idiosyncratic implementation of neural representation, making comparisons between individuals, brain regions, and measurement modalities possible without estimating the specific transformation that relates them.</p>
+<p>It assumes that measured brain activity is directly representative of a presented stimulus. The brain activity is assumed to be measured and summarized in a way that faithfully preserves the character of its code (example here?). This summarized brain data is assumed have a <numeric> structure that supports the calculation of dissimilarity between all values. Since summarized brain activity is directly representative of a stimulus, those dissimilarity measurements are assumed to be directly related to the dissimilarity measurements of the stimuli or the features they comprise – the object of the technique is to evaluate that relationship. This assumption is the conceptual foundation of the second-order isomorphism framing: “although the internal representation for a square need not itself be squre, it should (whatever it is) at least have a closer functional relation to the internal representation for a rectangle than that, say, for a green flash or the taste of persimmon.” <span class="citation">(Shepard and Chipman <a href="#ref-Shepard1970">1970</a>)</span>.</p>
+<p>In short, the dissimilarity measurements have to be correctly specified, and their comparison has to be meaningful.</p>
+<p>Further assumptions depend on what is being compared and by whom. If two neural representations are being compared, it is assumed that they share “overlapping information” <span class="citation">(Kriegeskorte, Mur, and Bandettini <a href="#ref-Kriegeskorte2008">2008</a>)</span> in three senses: 1) that they literally share information – they are representing the same stimulus, 2) that their dissimilarities were computed in a way that is equally compatible with, or, offers equal fidelity to the neural code they summarize 3) were computed such that their units can be meaningfully compared without transformation. If a neural representation is being compared to parametrically generated stimuli, it is typically <cites> assumed that the parameters are a good numerical specification of the features encoded in the neural representation. The technique is also restated as a framework for model testing, and when the dissimilarity structure of neural data is compared to that of a model, it is typically <cites> assumed that greater similarity between the two implies greater similarity in their representations.</p>
+These assumptions give a template for data analysis <span class="citation">(Kriegeskorte, Mur, and Bandettini <a href="#ref-Kriegeskorte2008">2008</a>)</span>. Typically, neural activity is summarized as a trial-average of its amplitude at each recording site over the duration of the stimulus. A dissimilarity matrix is computed from the population summary for each pair of stimuli using 1 minus the Pearson correlation coefficient or Spearman rank correlation coefficient.
+<figure fsho>
+<p>. This dissimilarity matrix is then compared to a number of other dissimilarity matrices computed from other neural datasets, stimulus parameters, or models, typically with one minus the Pearson or Spearman correlation coefficients. Confidence intervals around the comparison are computed by randomly permuting the category labels.</p>
+</div>
+<div id="representational-similarity-analysis---mathematically" class="section level2">
+<h2><span class="header-section-number">2.2</span> Representational Similarity Analysis - Mathematically</h2>
+<p>No mathematical description of RSA has been given. Such a description is useful for making assumptions and practices explicit.</p>
+<p>Some population of neurons <span class="math inline">\(\vec{N} = {n_{1}, n_{2}, \dots, n_{i}}\)</span> represents some stimulus <span class="math inline">\(s\)</span> as some continuous pattern of spikes over time <span class="math inline">\(\vec{R}^\vec{N}_s\)</span></p>
+<p><span class="math display">\[\begin{equation}
+\vec{R}^\vec{N}_s = f(s, t) + e \mid \vec{R}^\vec{N}_s \in \mathcal{R}
+\end{equation}\]</span></p>
+<p>with some noise <span class="math inline">\(e\)</span>, where <span class="math inline">\(\mathcal{R}\)</span> is a metric space. In this treatment, a single presentation of <span class="math inline">\(s\)</span> is functionally equivalent to many since <span class="math inline">\(f\)</span> is assumed to be identical on every presentation, and <span class="math inline">\(e\)</span> is assumed to be independent and identically distributed.</p>
+<p>The representation <span class="math inline">\(\vec{R}^\vec{N}_s\)</span> can be summarized by an isometric function <span class="math inline">\(g\)</span> – one that preserves the metric structure in the image of <span class="math inline">\(f\)</span> – as</p>
+<p><span class="math display">\[\begin{equation}
+\vec{X_s^\vec{N}} = g(\vec{R}^\vec{N}_s) \mid \vec{X_s^\vec{N}} \in \mathcal{X}\\
+d_{\mathcal{X}}(g(\vec{R})) = d_{\mathcal{R}}(\vec{R})
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(\mathcal{X}\)</span> is a metric space. Put another way, <span class="math inline">\(\mathcal{X}\)</span> is embedded in <span class="math inline">\(\mathcal{R}\)</span> <span class="math inline">\(g: \mathcal{X} \rightarrow \mathcal{R}\)</span> without distortion.</p>
+</div>
+<div id="criticism---theoretical" class="section level2">
+<h2><span class="header-section-number">2.3</span> Criticism - Theoretical</h2>
+<ul>
+<li>Criticisms regarding the assumptions or formtulation of the technique</li>
+</ul>
+<p>re: share information - measured with equal fidelity of code – compare amplitude averaging for am-noise stimulus-locked cell vs. rate tuned cell.</p>
+<p>ignores alternative coding theories, ie. pattern orthogonalization, in favor of some vague evolutionary argument “…would be of adaptive utility…”<span class="citation">Shepard and Chipman (<a href="#ref-Shepard1970">1970</a>)</span> .</p>
+<p>** even shepard used multidimensional scaling to comapre similarity matrices – the basis of multidimensional scaling is the observation that it is impossible to assume that two metric spaces will be the same.</p>
+<p>not at all possible to assume that it’s directly representing the stimulus as you present and describe it, why not represented as conceptual</p>
+<p>Interpretation cannot be extended to the structure of the neural representation – that’s precisely what you abstracted out of, you can’t buy it back at the end. You specifically can’t say that the neural representation between x and y is the same, just that they have the same dissimilarity structure. Since there are infinitely many ways to represent a stimulus, there are infinitely many that give the same dissimilarity structure. no free information. related to nontransitivity of correlations</p>
+</div>
+<div id="criticism---practical" class="section level2">
+<h2><span class="header-section-number">2.4</span> Criticism - Practical</h2>
+<ul>
+<li>Criticisms regarding the particular practice of the technique that have alternatives that don’t functionally change the technique.bg fd ## Lit Review</li>
+</ul>
+<p>(table of all the papers and what problematic elements they have used)</p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Kriegeskorte2008">
+<p>Kriegeskorte, Nikolaus, Marieke Mur, and Peter Bandettini. 2008. “Representational similarity analysis - connecting the branches of systems neuroscience.” <em>Frontiers in Systems Neuroscience</em> 2. Frontiers Media SA: 4. doi:<a href="https://doi.org/10.3389/neuro.06.004.2008">10.3389/neuro.06.004.2008</a>.</p>
+</div>
+<div id="ref-Shepard1970">
+<p>Shepard, Roger N., and Susan Chipman. 1970. “Second-order isomorphism of internal representations: Shapes of states.” <em>Cognitive Psychology</em> 1 (1): 1–17. doi:<a href="https://doi.org/10.1016/0010-0285(70)90002-2">10.1016/0010-0285(70)90002-2</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="argument.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

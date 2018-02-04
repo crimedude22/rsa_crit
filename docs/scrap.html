@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>rsa crit</title>
+  <meta name="description" content="rsa crit">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="rsa crit" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="<a href="https://crimedude22.github.io/rsa_crit/" class="uri">https://crimedude22.github.io/rsa_crit/</a>" />
+  
+  
+  <meta name="github-repo" content="crimedude22/rsa-crit" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="rsa crit" />
+  
+  
+  
+
+<meta name="author" content="Jonny Saunders">
+
+
+<meta name="date" content="2017-10-30">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="simulations-to-run.html">
+<link rel="next" href="other-resources.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> rsa crit</a></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#representational-similarity-analysis---qualitatively"><i class="fa fa-check"></i><b>2.1</b> Representational Similarity Analysis - Qualitatively</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#representational-similarity-analysis---mathematically"><i class="fa fa-check"></i><b>2.2</b> Representational Similarity Analysis - Mathematically</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#criticism---theoretical"><i class="fa fa-check"></i><b>2.3</b> Criticism - Theoretical</a></li>
+<li class="chapter" data-level="2.4" data-path="introduction.html"><a href="introduction.html#criticism---practical"><i class="fa fa-check"></i><b>2.4</b> Criticism - Practical</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="argument.html"><a href="argument.html"><i class="fa fa-check"></i><b>3</b> argument</a><ul>
+<li class="chapter" data-level="3.1" data-path="argument.html"><a href="argument.html#httpciteseerx.ist.psu.eduviewdocdownloaddoi10.1.1.136.5427reprep1typepdf"><i class="fa fa-check"></i><b>3.1</b> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.136.5427&amp;rep=rep1&amp;type=pdf" class="uri">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.136.5427&amp;rep=rep1&amp;type=pdf</a></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="simulations-to-run.html"><a href="simulations-to-run.html"><i class="fa fa-check"></i><b>4</b> Simulations to run</a></li>
+<li class="chapter" data-level="5" data-path="scrap.html"><a href="scrap.html"><i class="fa fa-check"></i><b>5</b> scrap</a></li>
+<li class="chapter" data-level="6" data-path="other-resources.html"><a href="other-resources.html"><i class="fa fa-check"></i><b>6</b> Other resources</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">rsa crit</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="scrap" class="section level1">
+<h1><span class="header-section-number">5</span> scrap</h1>
+<ul>
+<li><code>kriegeskorte 2008</code> - mistakes useful properties of correlation distance with appropriateness of it use.</li>
+<li><code>shepard 1962a</code> - “Clearly, the success of such an undertaking depends upon the selection of the proper distance function; that is, the function that will transforn~ the proximity measures into Euclidean distances.”</li>
+<li>“The consequent nonlinearity of the distance function can magnify seemingly negligible statistical fluctuations of small proximity measures into wild swings of the corresponding estimates for the large distances”</li>
+<li><p>“The preceding tests have indicated that, when the proximity measures are exactly specifiable as a function of the distances in a known Euclidean configuration, both the function and the configuration can be recovered by the analysis of those proximity measures alone.”</p></li>
+<li><p><a href="https://pigeon.psy.tufts.edu/avc/dblough/measurement.htm" class="uri">https://pigeon.psy.tufts.edu/avc/dblough/measurement.htm</a> - integral vs. separable dimensions and euclidean vs minkowski measurements, does the brain have a ‘preferred axis orientation?’ – if minkowski, need to also determine the relative ‘weight’ of each of the dimensions.</p></li>
+<li><p><a href="http://ramet.elte.hu/~podani/3-Distance,%20similarity.pdf">http://ramet.elte.hu/~podani/3-Distance,%20similarity.pdf</a> - The distance is meaningful only if the within-group covariances are homogeneous (more precisely, they estimate the same common covariance matrix), and the distribution of variables is multivariate normal. Sneath &amp; Sokal (1973) em- phasize, however, that the distance measure is less sensitive to the violation of these condi- tions (robustness). Note, further, that computation of generalized distance is possible only if the number of objects is not less than the number of variables. Otherwise matrix W is singular (Appendix C) and cannot be inverted. The same problem arises if the correlation of any two variables is –1 or 1, or if the variance of one or more variables is zero.</p></li>
+<li><p>Shepard 1970 doesn’t really argue for the 2nd-order isomorphism as literal neural representations.</p></li>
+<li><p>Vector space qualities pg. 24 <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q" class="uri">https://www.google.com/url?sa=t&amp;rct=j&amp;q</a>=&amp;esrc=s&amp;source=web&amp;cd=4&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiVq7aep8_YAhVLzWMKHeYxC2QQFghAMAM&amp;url=http%3A%2F%2Fwww.springer.com%2Fcda%2Fcontent%2Fdocument%2Fcda_downloaddocument%2F9781447140740-c2.pdf%3FSGWID%3D0-0-45-1332402-p174313277&amp;usg=AOvVaw3TKWDlTo_r49F-HBIhWjlN</p></li>
+<li><p>relationship between vector spaces and correlation: <a href="http://www.pas.rochester.edu/~douglass/papers/Towsley_Pak_Douglass_published_.pdf" class="uri">http://www.pas.rochester.edu/~douglass/papers/Towsley_Pak_Douglass_published_.pdf</a></p></li>
+<li><p>the permutation test is distance correlation: <a href="https://en.wikipedia.org/wiki/Distance_correlation" class="uri">https://en.wikipedia.org/wiki/Distance_correlation</a></p></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+
+n_stim  &lt;-<span class="st"> </span><span class="dv">92</span>
+n_vox   &lt;-<span class="st"> </span><span class="dv">316</span>
+n_scans &lt;-<span class="st"> </span><span class="dv">14</span>
+
+<span class="co"># random mean adjustment values for different &quot;codes&quot;</span>
+<span class="co">#rep_shunt &lt;- array(rnorm(n_stim))</span>
+<span class="co">#rep_shunt &lt;- rnorm(n_stim/23)</span>
+rep_shunt &lt;-<span class="st"> </span><span class="kw">c</span>(-<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>)
+rep_shunt &lt;-<span class="st"> </span><span class="kw">array</span>(<span class="kw">rep</span>(rep_shunt, <span class="dt">each=</span><span class="dv">23</span>))
+
+
+<span class="co"># bold means for each stimulus, </span>
+
+<span class="co"># return vector of mean bold values for each voxel for a stimulus</span>
+stim_mean &lt;-<span class="st"> </span>function(stim_shunt, <span class="dt">scans=</span>n_scans, <span class="dt">vox=</span>n_vox){
+  s_mean &lt;-<span class="st"> </span><span class="kw">colMeans</span>( <span class="co"># mean across presentations</span>
+    <span class="kw">matrix</span>(<span class="dt">nrow=</span>scans, <span class="dt">ncol=</span>vox,
+      <span class="co">#data=c(rnorm(vox*scans),rnorm(8*vox*scans/9, mean=stim_shunt, sd=0.5)))</span>
+      <span class="dt">data=</span><span class="kw">rnorm</span>(vox*scans, <span class="dt">mean=</span>stim_shunt, <span class="dt">sd=</span><span class="fl">0.5</span>))
+  )
+  <span class="kw">return</span>(s_mean)
+}
+
+<span class="co"># bold means for each stimulus</span>
+subj_rep &lt;-<span class="st"> </span><span class="kw">apply</span>(rep_shunt, <span class="dv">1</span>, stim_mean)
+
+<span class="co"># dissim/1-correlation matrix across stim</span>
+subj_cor &lt;-<span class="st"> </span><span class="kw">cor</span>(subj_rep, <span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)
+<span class="kw">diag</span>(subj_cor) &lt;-<span class="st"> </span><span class="dv">0</span>
+subj_cor &lt;-<span class="st"> </span><span class="dv">1</span>-subj_cor
+
+subj_cor_melt &lt;-<span class="st"> </span>reshape::<span class="kw">melt</span>(subj_cor, <span class="dt">varnames=</span><span class="kw">c</span>(<span class="st">&quot;stim1&quot;</span>, <span class="st">&quot;stim2&quot;</span>))
+
+<span class="kw">ggplot</span>(subj_cor_melt, <span class="kw">aes</span>(<span class="dt">x=</span>stim1, <span class="dt">y=</span>stim2, <span class="dt">fill=</span>value))+
+<span class="st">  </span><span class="kw">geom_raster</span>()+
+<span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">type   =</span> <span class="st">&quot;div&quot;</span>, <span class="dt">palette=</span><span class="st">&quot;RdGy&quot;</span>)</code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>p val estimation from westfall/young p.38-9</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># NSIM</span>
+nsim &lt;-<span class="st"> </span><span class="dv">10000</span>
+nboot &lt;-<span class="st"> </span><span class="dv">1000</span>
+
+counts &lt;-<span class="st"> </span><span class="dv">0</span>
+for (i in <span class="kw">seq</span>(nsim)){
+  if(i%%<span class="dv">50</span> ==<span class="st"> </span><span class="dv">0</span>){
+    <span class="kw">print</span>(i)
+  }
+  <span class="co"># generate sample data vectors</span>
+  v1 &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">100</span>)
+  v2 &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">100</span>)
+  
+  r0 &lt;-<span class="st"> </span><span class="kw">cor</span>(v1, v2)
+  
+  <span class="co"># perm test</span>
+  countb &lt;-<span class="st"> </span><span class="dv">0</span>
+  for (j in <span class="kw">seq</span>(nboot)){
+    r1 &lt;-<span class="st"> </span><span class="kw">cor</span>(v1, <span class="kw">sample</span>(v2))
+    if(r1&gt;r0){
+      countb &lt;-<span class="st"> </span>countb<span class="dv">+1</span>
+    }
+  }
+  
+  if (countb &lt;=<span class="st"> </span><span class="fl">0.05</span>){
+    counts &lt;-<span class="st"> </span>counts<span class="dv">+1</span>
+  }
+  
+}
+
+adj_a &lt;-<span class="st"> </span>counts/nsim</code></pre></div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="simulations-to-run.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="other-resources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

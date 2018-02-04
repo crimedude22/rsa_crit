@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="introduction.html">
+<link rel="prev" href="introduction.html">
+<link rel="next" href="simulations-to-run.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -131,28 +131,30 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">rsa crit</h1>
-<h4 class="author"><em>Jonny Saunders</em></h4>
-<h4 class="date"><em>2017-10-30</em></h4>
+<div id="argument" class="section level1">
+<h1><span class="header-section-number">3</span> argument</h1>
+<p><strong>theoretical</strong> 1. assumption of a meaningfully euclidean neural manifold ** 1-correlation is euclidean distance <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.19.8732&amp;rep=rep1&amp;type=pdf" class="uri">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.19.8732&amp;rep=rep1&amp;type=pdf</a> Lemma 1 ** The scaling is uncertain - one cannot assume that a stimulus with half the distance from another stimulus is twice as similar. in fact, most examples demonstrate otherwise. ** MDS requires the assumption of ordinality, but there is no reason to assume that for neural data - what if one voxel’s activation changes its ‘meaning’ depending on the state of other voxels? such a circumstance is the rule rather than the exception in nonlinear systems. ** Metric axioms - minimality (others more dissimilar than selves) is treated as an outcome rather than a presupposition, symmetry - transition between states is certainly not symmetrical, triangle inequality - not true if neural manifold is curved at all 2. the second-order isomorphism allows plucking gold from noise by collapsing error at successive levels to means 3. error around ‘representation’ assumed to be noise around underlying ‘real’ population average representation == state is not important. 4. multiple types of similarity - association (bread and butter) is different than similarity (red and red-orange)</p>
+<p><strong>statistical</strong> 3. transitivity of correlations 4. omitted variable bias - distance matrices are only meaningful to the degree that they replicate or diverge from the stimulus distance matrix, and that distance matrix is only reasonable to the degree that it is free from omitted variable bias – that it accurately captures perceptual space. 5.</p>
+<div id="httpciteseerx.ist.psu.eduviewdocdownloaddoi10.1.1.136.5427reprep1typepdf" class="section level2">
+<h2><span class="header-section-number">3.1</span> <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.136.5427&amp;rep=rep1&amp;type=pdf" class="uri">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.136.5427&amp;rep=rep1&amp;type=pdf</a></h2>
+<p>An important issue in the context of distance functions is the question under which conditions a given dissimilarity space (X,d) can be embedded isometrically into Euclidean spaces H. Here the goal is to find a mapping Φ : X → H such that d(x, y) = ∥Φ(x) − Φ(y)∥ is satisfied for all x, y ∈ X . As distances in vector spaces always satisfy all axioms (D1) - (D5), isometrically embedding a dissimilarity space into a vector space is only possible if the dissimilarity function is a metric. This is a necessary condition, but it is not sufficient. A characterization of met- ric spaces which can be embedded isometrically into Hilbert spaces was given by Schoenberg (1938): A metric space (X,d) can be embedded isometrically into a Hilbert space if and only if the function −d2 is conditionally positive definite, that is − li,j=1 cicjd2(xi,xj) ≥ 0 for all l ∈ N, xi,xj ∈ X, and for all ci,cj ∈ R with i ci = 0. Such a metric is called a Euclidean metric. Contrary to embeddings into Hilbert spaces, isometric embeddings into certain Banach spaces can be constructed for arbitrary metric spaces. Such constructions will be discussed in detail in Section 2</p>
+<ul>
+<li>neural activations are ‘representations’ - incl. that measurement variance is noise around some true ‘representation’ ** “We can think of a brain region’s representation as a multidimensional space. The dimensions of the space correspond to the neurons, and a point corresponds to an activity pattern (i.e., each neuron’s activity provides the coordinate value for one of the dimensions).” - kriegeskorte 2013</li>
+<li>Those represenations are meaningfully compared using 1-correlation, or 1-rank correlation, ie. they are a hilbert space.</li>
+<li>Rather than measure the quality or nature of those represenations themselves, we can measure a ‘second-order’ isomorphism, or measure the relationship between the dissimilarities of neural representations and those of the stimuli – which can be estimated using the components of computational models.</li>
+<li><p>The quality of that second-order isomorphism can be computed by randomizing the condition labels.</p></li>
+<li><p>assume that neural activity is some probabilistic function of the stimuli, and compare it to some other function that compares distances. (since the choice of functions mapping stimulus to representational space is arbitrary, subject to infinite researcher degrees of freedom).</p></li>
+</ul>
+<p>Problems: * It’s not clear that neural representations are ‘activations’ in themselves, ie. that a stimulus reliably evokes a particular pattern of neural activation. Instead it’s entirely possible that representation is state dependent. * It’s almost certainly untrue that, with respect to stimulus representation, that each voxel is equivalently ‘important’ * the comparison of computational models to neural data is not as straightforward as it seems, this is confusing the two types of function estimation in vapnik.</p>
 </div>
-<div id="rsa-crit" class="section level1">
-<h1><span class="header-section-number">1</span> rsa crit</h1>
-<p>** <a href="https://www.math.upenn.edu/~ghrist/notes.html" class="uri">https://www.math.upenn.edu/~ghrist/notes.html</a></p>
-<p>** <a href="http://cns-classes.bu.edu/cn510/Papers/Theoretical%20Neuroscience%20Computational%20and%20Mathematical%20Modeling%20of%20Neural%20Systems%20-%20%20Peter%20Dayan,%20L.%20F.%20Abbott.pdf">http://cns-classes.bu.edu/cn510/Papers/Theoretical%20Neuroscience%20Computational%20and%20Mathematical%20Modeling%20of%20Neural%20Systems%20-%20%20Peter%20Dayan,%20L.%20F.%20Abbott.pdf</a> decoding chapter, need to incorporate the rest of the bayesian model, and have to account for the ‘tuning’ of the individual voxels for the particular stimuli. assumption that our representation is unbiased depends on law of large numbers – have to have enough cells representing feature space roughly equally. to the degree that the strength of response (the dot product between stimulus features and voxel selectivity) is nonuniform, so to will be representation measured by RSA. Then, we are not measuring differences in representation, but differences in selectivity, and the procedure by which we select our ROI becomes the basis of the experiment.</p>
-<p>** there is indeed no reason to believe that similar stimuli will be closely grouped in the vector space of voxel activations, because it is entirely possible that whatever “downstream” decodes this representation has its own set of weights that recombine that representation. give simple example of NNs</p>
-<p>** fisher information gives a way of formulating the fact that different neurons give different amounts of information to a representation, and within a neuron, carries different amount of information depending on its fr/max fr.</p>
-<p>** indeed very similar stimuli giving very similar patterns of activity would be suboptimal for a universal recognition scheme – cf. to the hippocampal model of pattern orthogonalization. We would expect and want patterns to be maximally different for very similar stimuli. How do experts learn to tell very minute differences apart?</p>
-<p>** <a href="https://arxiv.org/abs/1212.4201" class="uri">https://arxiv.org/abs/1212.4201</a> ** <a href="https://arxiv.org/abs/1605.01905" class="uri">https://arxiv.org/abs/1605.01905</a></p>
-<p>** <a href="https://arxiv.org/pdf/1605.01905.pdf" class="uri">https://arxiv.org/pdf/1605.01905.pdf</a> homotopy assumptions, good cover. Also idea of ‘local obstructions’, and constraint of neural codes</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="simulations-to-run.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
